@@ -19,7 +19,7 @@
 -  после этого готов новый репозиторий с копией всех файлов из исходного репозитория с заданиями
 
 ![](https://raw.githubusercontent.com/natenka/PyNEng/master/images/git/github_use_template.png)
-test
+testtest
 ### Клонирование репозитория с GitHub
 
 Для локальной работы с репозиторием его нужно клонировать.
