@@ -1,4 +1,4 @@
-ip = '10.1.1.1'
+ip = '192.168.3.1'
 ip_list = list(ip.split('.'))
 print(f'''
       IP address:
