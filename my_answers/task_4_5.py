@@ -1,0 +1,10 @@
+command1 = "switchport trunk allowed vlan 1,2,3,5,8"
+command2 = "switchport trunk allowed vlan 1,3,8,9"
+string_of_vlan1 = command1.strip('switchport trunk allowed vlan')
+list_of_vlan1 = list(string_of_vlan1.split(','))
+string_of_vlan2 = command2.strip('switchport trunk allowed vlan')
+list_of_vlan2 = list(string_of_vlan2.split(','))
+equal_vlan = set(list_of_vlan1) & set(list_of_vlan2)
+print( 'command1 = "switchport trunk allowed vlan 1,2,3,5,8"'+
+       '\ncommand2 = "switchport trunk allowed vlan 1,3,8,9"'+
+       '\nresult = ' + str(equal_vlan))
