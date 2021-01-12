@@ -26,7 +26,7 @@ london_co = {
     },
 }
 
-input1 = input("Введіть ім'я пристрою:")
+input1 = input("Введіть ім'я пристрою " + str(list(london_co)) + ": ")
 list_of_in1 = str(list(london_co[input1])).replace("'",'')
 input2 = input("Введіть ім'я параметру " + list_of_in1 + ": ")
 london2 = london_co[input1].copy() 
