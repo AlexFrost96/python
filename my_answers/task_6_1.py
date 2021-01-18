@@ -11,3 +11,4 @@ for mac_bad in mac :
 			mac_cisco = mac_cisco + letter
 	mac_cisco_list.append(mac_cisco)
 	print(mac_cisco)
+print(mac_cisco_list)
