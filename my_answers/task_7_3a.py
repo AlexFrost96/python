@@ -10,7 +10,10 @@ with open('CAM_table.txt') as f:
                 else:
                     continue
         str_final.sort()
-        print(str_final)
+
+for word in str_final:
+    print (f'''{word[0]:<7}{word[1]:<17}{word[2]:<8}''')
+
                 
                        
 
