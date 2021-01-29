@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 str_final = []
+input_vlan = input ('Введіть номер влану:')
 with open('CAM_table.txt') as f:
         for line in f:
             str_list = line.split()
@@ -13,7 +14,10 @@ with open('CAM_table.txt') as f:
         str_final.sort()
 
 for word in str_final:
-    print (f'''{word[0]:<7}{word[1]:<17}{word[2]:<8}''')
+    if word[0] == int(input_vlan):
+        print (f'''{word[0]:<7}{word[1]:<17}{word[2]:<8}''')
+    else:
+        continue
 
                 
                        
